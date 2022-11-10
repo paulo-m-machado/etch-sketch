@@ -20,7 +20,7 @@ function generateGrid(gSize) {
         let row = document.createElement('div');
         row.setAttribute('class', 'row');
         row.setAttribute('display', 'flex');
-        let squareSize = 500/gSize;
+        let squareSize = 249/gSize;
         console.log(squareSize);
         
         for (let o = 0; o < gSize; o++) {
@@ -38,7 +38,7 @@ function generateGrid(gSize) {
     components.forEach( component => component.addEventListener('mouseover', () => addHover(component)))
 }
 
-generateGrid(16)
+generateGrid(16);
 
 
 

@@ -1,6 +1,8 @@
 #grid{
     display: flex;
     flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 1;
     overflow: hidden;
     max-width: 500px;
     max-height: 500px;
@@ -13,9 +15,9 @@
 
 .component {
     border: 1px solid red;
-    padding: 10px;
+    flex: auto;
 }
 
 .onhover {
-    background-color: blueviolet;
+    background-color: black;
 }

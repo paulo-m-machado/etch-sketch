@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: auto;
+    background-color: crimson;
 }
 
 #grid{
@@ -19,10 +20,10 @@ body {
 }
 
 .component {
-    border: 1px solid red;
     flex: auto;
     box-sizing: border-box;
     aspect-ratio: 1 / 1;
+    background-color: white;
 }
 
 .onhover {

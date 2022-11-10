@@ -1,11 +1,16 @@
+body {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
 #grid{
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
-    flex-grow: 1;
     overflow: hidden;
     max-width: 500px;
     max-height: 500px;
+    aspect-ratio: 1 / 1;
 }
 
 .row {
@@ -16,6 +21,8 @@
 .component {
     border: 1px solid red;
     flex: auto;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
 }
 
 .onhover {

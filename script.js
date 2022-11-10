@@ -20,13 +20,13 @@ function generateGrid(gSize) {
         let row = document.createElement('div');
         row.setAttribute('class', 'row');
         row.setAttribute('display', 'flex');
-        let squareSize = 249/gSize;
+        let squareSize = 250/gSize;
         console.log(squareSize);
         
         for (let o = 0; o < gSize; o++) {
             let component = document.createElement('div');
             component.setAttribute('class', 'component');
-            component.style.cssText = `padding: ${squareSize}px;`;
+            component.style.cssText = `width: ${squareSize}px; min-height: ${squareSize}px;`;
     
             row.appendChild(component);
         }
